@@ -83,4 +83,20 @@ git commit --amend
 git rebase --continue
 ```
 
+显示文件的修改记录
+
+```
+git log [path]
+// 额外输出变更内容
+git log -p [path]
+```
+比较文件变化
+
+```
+// 常用 比较文件2个版本之间的变更内容
+git diff [[commit1][commit2]]] [path]
+// 比较文件当前版本和倒数第3版本之间的变更内容
+git diff HEAD HEAD~3 [path]
+```
+
 # 应用示例
